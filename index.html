@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <!--The meta element represents various kinds of metadata 
+            that cannot be expressed using 
+            the title, base, link, style, and script elements.            
+            this line for standard that we can use it for typing -->
+    <meta charset="UTF-8" />
+    <title>Cutatype</title>
+    <!-- External style -->
+    <link rel="stylesheet" href="cindex.css">
+    <link rel="icon" href="download.jpeg">
+    <!-- internal style -->
+    <style>
+        h1 {
+            color: black;
+        }
+    </style>
+    <!-- this line for descipte the site in the search engine  -->
+    <meta name="description" contant="هذا الموقع خاص باللجنة العليا لكتاتيب المنصورية" />
+
+
+    <script></script>
+</head>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<body class="index-page">
+    <!-- <header>Head Of Website</header>
+    <nav>Link - Link - Link</nav>
+    <section>
+        <section></section>
+        <aside></aside>
+    </section>
+    <pre> -->
+    <header>
+
+        <img id="logo" src="apel.jpeg" alt="">
+        <div><a href="index.html">الرئيسية</a></div>
+        <div><a href="leadboard.html">الأوائل</a></div>
+        <div class="dis"><a href="#">من نحن؟</a></div>
+        <div class="dis" ><a href="#">تواصل معنا</a></div>
+        <div class="dis"><a href="#"> المسابقات</a></div>
+        <article></article>
+
+    </header>
+
+    <main>
+        <div class="hello-sub-section">
+
+            <blockquote> خيرُكُم مَن تعلَّمَ القرآنَ وعلَّمَهُ</blockquote>
+            <h1> مرحبا بكم في موقع كتاتيب المنصورية </h1>
+            <!-- in line style -->
+            <h2 style="color:black;margin: 10px; word-spacing: 3px;">من خلال هذا الموقع يمكنك تتبع التزام و حضور الطالب
+                سواء من خلال ولي
+                الامر او الطالب نفسه </h2>
+<script>
+function  goToMarke(){
+    window.location.href = "marks.html";
+}
+</script>
+
+            <div class="login">
+                <h3> تسجيل الدخول </h3>
+                <form method="post" >
+
+                    <div class="item-login">
+                        <label for="iuser"> اسم المستخدم </label><br>
+                        <input type="text" required name="user" id="iuser" autofocus class="ltr-input">
+                    </div>
+
+                    <div class="item-login">
+                        <label for="ipass"> كلمة المرور </label><br>
+                        <input type="password" required name="pass" id="ipass" class="ltr-input">
+                    </div>
+
+                    <input class="botom" onclick="goToMarke()" type="submit"  value="تسجيل الدخول">
+
+                </form>
+            </div>
+
+
+            <a class="item-login-link" href="signup.html" title="الذهاب لانشاء حساب" target="_blank"> انشاء حساب </a>
+            <a class="item-login-link" href="marks.html"> الدخول كشيخ </a>
+
+        </div>
+
+
+        <!-- <img src="https://horofar.com/public/uploads/images/5938726187683642.jpg" width="630" height="300" alt="hhhh"
+        width="1200px">
+    <hr> -->
+
+        <hr>
+        <!-- ------------------------------------------------------------->
+        <!-- <iframe src="https://youtube.com/embed/playlist?list=PLDoPjvoNmBAzhFD3niPAa1C1gXG4cs14J&si=5uOqCPcuaheuvx8U"
+            frameborder="0"></iframe>
+        <br>
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/videoseries?si=5uOqCPcuaheuvx8U&amp;list=PLDoPjvoNmBAzhFD3niPAa1C1gXG4cs14J"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <br>
+        <iframe width="1120" height="630"
+            src="https://www.youtube-nocookie.com/embed/videoseries?si=5uOqCPcuaheuvx8U&amp;list=PLDoPjvoNmBAzhFD3niPAa1C1gXG4cs14J"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe> -->
+        <h1> اخبار </h1>
+       <div class="slieder" >
+        <!-- <h2>Automatic Slideshow</h2>
+        <p>Change image every 2 seconds:</p>
+         -->
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img class="img-slider" src="3.jpeg" >
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img class="img-slider"  src="2.jpeg" >
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img class="img-slider"  src="1.jpeg" >
+          <div class="text">Caption Three</div>
+        </div>
+        
+        </div>
+        
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        <br>
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+        </div>
+    </main>
+    <footer>
+        <div id="wrf">
+            <h2 style="margin-bottom: 10px;">ما هو هدف الموقع ؟ </h2>
+            <p> نعمل جاهدين علي تتبع مستوي الطلاب و تحويل التزامهم الي ارقام محسوسة حيث يسهل اتخاذ القرارات الصحيحة و
+                ادراك اسباب الانقطاع وتداركها ,تساهم الارقام ايضا في تشجيع الطلاب </p>
+        </div>
+        <div id="sf">
+            <div id="ins">
+                <input id="in" type="text" placeholder="يمكنك البحث هنا عما تريد">
+
+                <button>بحث</button>
+
+            </div>
+            <p id="ps"> يمكنك البحث بسهولة </p>
+        </div>
+        <p class="copy-right"> حقوق الطبع و النشر محفوظة <a class="copy-right" href="http://google.com"
+                target="_blank">&copy;</a></p>
+
+    </footer>
+
+</body>
+
+
+
+
+</html>
