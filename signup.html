@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <!--The meta element represents various kinds of metadata 
+            that cannot be expressed using 
+            the title, base, link, style, and script elements.            
+            this line for standard that we can use it for typing -->
+    <meta charset="UTF-8" />
+    <meta lang="ar">
+    <title>Cutatype</title>
+    <link rel="stylesheet" href="cindex.css">
+    <link rel="icon" href="download.jpeg">
+    <!-- this line for descipte the site in the search engine  -->
+    <meta name="description" contant="هذا الموقع خاص باللجنة العليا لكتاتيب المنصورية" />
+
+    <style></style>
+    <script></script>
+</head>
+
+<body class="signup-page">
+    <header>
+
+        <img id="logo" src="apel.jpeg" alt="">
+        <div><a href="index.html">الرئيسية</a></div>
+        <div><a href="#">الأوائل</a></div>
+        <div class="dis"><a href="#">من نحن؟</a></div>
+        <div class="dis"><a href="#">تواصل معنا</a></div>
+        <div class="dis"><a href="#">تاريخ المسابقات</a></div>
+        <article></article>
+
+    </header>
+    <main>
+        <h1> مرحبا بكم في موقع كتاتيب المنصورية </h1>
+
+
+
+        <div class="signup-sub-section">
+            <h2> انشاء حساب </h2>
+            <form>
+                <div class="item-signup">
+                    <label for="istu_name"> اسم الطالب </label><br>
+                    <input type="text" required name="stu_name" id="istu_name" style="outline-width: 0px;"
+                        onfocus="blueb(this)" onblur="rblueb(this)">
+                </div>
+                <div class="item-signup">
+                    <label for="imail"> البريد الالكتروني ان وجد</label><br>
+                    <input type="email" name="mail" id="imail">
+                </div>
+                <div class="item-signup">
+                    <label for="ifath_num"> رقم هاتف ولي الامر </label><br>
+                    <input type="tel" required value="+20" name="fath_num" id="ifath_num" class="ltr-input">
+                </div>
+
+                <div class="item-signup">
+                    <label for="istu_num"> رقم هاتف الطالب ان وجد</label><br>
+                    <input type="tel" value="+20" name="stu_num" id="istu_num" class="ltr-input">
+                </div>
+
+                <div class="item-signup">
+                    <label for="ihome_add"> عنوان الطالب </label><br>
+                    <input type="text" required name="home_add" id="ihome_add">
+                </div>
+                <div class="item-signup">
+                    <label for="ishakh"> الكُــتَّـاب </label><br>
+                    <select required name="shakh" id="ishakh">
+                        <optgroup label="ام حامض">
+                            <option value="1"> الرزيقاب </option>
+                            <option value="2"> الكلحياب </option>
+                        </optgroup>
+                        <optgroup label="القوز">
+                            <option value="3"> الجامع الكبير </option>
+                            <option value="4"> جامع البحر </option>
+                        </optgroup>
+                        <optgroup label="نجع العمدة">
+                            <option value="5"> اب عشرين </option>
+                            <option value="6    "> مندرة العمدة </option>
+                        </optgroup>
+                    </select>
+                </div>
+                <!-- <input list="programming" name="prog">
+
+                <datalist id="programming">
+                    <option value="Python">
+                    <option value="PHP">
+                    <option value="C#">
+                    <option value="C">
+                    <option value="C++">
+                    <option value="Scala">
+                </datalist> -->
+                <div class="item-signup">
+                    <label for="iage"> السن </label><br>
+                    <input type="number" min="0" max="30" required name="age" id="iage">
+                </div>
+
+                <div class="item-signup">
+                    <label for="iparts"> عدد الاجزاء المحفوظة </label><br>
+                    <input type="number" min="0" max="30" required name="parts" id="iparts">
+                </div>
+
+                <div class="item-signup">
+                    <label for="isub_pass"> كلمة المرور </label><br>
+                    <input type="password" required placeholder="ادخل كلمة مرور قوية علي الاقل 6 عناصر" name="sub_pass"
+                        id="isub_pass" minlength="6" maxlength="32" class="ltr-input">
+                </div>
+                <div class="item-signup">
+                    <label for="ire_pass">تاكيد كلمة المرور </label><br>
+                    <input type="password" required placeholder="اعد ادخال كلمة المرور" name="re_pass" id="ire_pass"
+                        class="ltr-input">
+                </div>
+
+                <div class="item-signup">
+                    <label> طالب او ولي الامر </label><br><br>
+
+                    <label class="l-rad" for="stu">طالب</label>
+                    <input class="rad" type="radio" id="stu" name="acc_type" value="STU" checked><br>
+                    <label class="l-rad" for="fath">ولي امر</label>
+                    <input class="rad" type="radio" id="fath" name="acc_type" value="FATH"><br>
+                </div>
+                <div class="item-signup" id="img-pro">
+                    <label for="uimg">ارفع صورة الحساب</label> <br>
+                    <input id="uimg" type="file">
+                </div>
+                <br>
+                <div class="item-signup" id="skills">
+                    <label>اختر المهارات التي تجيدها</label><br><br>
+                    <input type="checkbox" name="skills" class="skills" value="tg">
+                    <label class="l-skills">تجويد</label><br>
+                    <input type="checkbox" name="skills" class="skills" value="tf">
+                    <label class="l-skills">تفسير</label><br>
+                    <input type="checkbox" name="skills" class="skills" value="ha">
+                    <label class="l-skills">حفظ احاديث</label><br>
+
+                </div>
+                <br>
+                <input class="botom" type="submit" value="انشاء الحساب ">
+            </form>
+
+        </div>
+        <iframe src="" frameborder="0"></iframe>
+    </main>
+
+
+   <script>
+      //  function blueb(el) {
+       //     el.outline = "none"
+      //      el.style.border = "2px solid blue "
+      //      el.style.borderRadius = " 2px"
+      ////      console.log("onfocus")
+
+
+      //  }
+
+      //  var uname = document.getElementById('stu_name')
+
+    //     function rblueb(el) {
+
+    //         el.style.border = "1px solid black "
+    //         el.style.borderRadius = " 2px"
+    //         console.log(get.lenth(el.value))
+    //         if (el.lenth) {
+                
+    //         }
+    //     }
+    // </script>
+
+        <footer>
+            <div id="wrf">
+                <h2 style="margin-bottom: 10px;">ما هو هدف الموقع ؟ </h2>
+                <p> نعمل جاهدين علي تتبع مستوي الطلاب و تحويل التزامهم الي ارقام محسوسة حيث يسهل اتخاذ القرارات الصحيحة و
+                    ادراك اسباب الانقطاع وتداركها ,تساهم الارقام ايضا في تشجيع الطلاب </p>
+            </div>
+            <div id="sf">
+                <div id="ins">
+                    <input id="in" type="text" placeholder="يمكنك البحث هنا عما تريد">
+    
+                    <button>بحث</button>
+    
+                </div>
+                <p id="ps"> يمكنك البحث بسهولة </p>
+            </div>
+            <p class="copy-right"> حقوق الطبع و النشر محفوظة <a class="copy-right" href="http://google.com"
+                    target="_blank">&copy;</a></p>
+    
+        </footer>
+
+
+
+
+
+</body>
+
+</html>
