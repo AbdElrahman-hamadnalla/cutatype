@@ -2,7 +2,7 @@
 
 ## This website tracks students’ memorization of the Holy Qur’an and their commitment and consists of three main pages:
 
-### Login page
+### Login page.
 On this page you can log in and see the latest general news
 ### Account creation page
 On this page, you can enter your data and register on the site
